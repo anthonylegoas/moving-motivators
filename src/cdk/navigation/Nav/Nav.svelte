@@ -1,18 +1,15 @@
-<script>
-  export let segment;
-</script>
-
 <style>
   nav {
-    border-bottom: 1px solid rgba(255, 62, 0, 0.1);
-    font-weight: 300;
-    padding: 0 1em;
-    height: 100%;
+    width: 100%;
   }
 
   ul {
     margin: 0;
     padding: 0;
+  }
+
+  ul > li + li {
+    margin-left: 0.5em;
   }
 
   /* clearfix */
@@ -25,21 +22,14 @@
   li {
     display: block;
     float: left;
+    border: 1px solid var(--primary-color);
+    border-radius: 3px;
+    color: var(--primary-color);
   }
 
-  [aria-current] {
-    position: relative;
-    display: inline-block;
-  }
-
-  [aria-current]::after {
-    position: absolute;
-    content: "";
-    width: calc(100% - 1em);
-    height: 2px;
-    background-color: rgb(255, 62, 0);
-    display: block;
-    bottom: -1px;
+  li.accent {
+    background-color: var(--primary-color);
+    color: white;
   }
 
   a {
@@ -51,22 +41,12 @@
 
 <nav>
   <ul>
-    <li>
-      <a aria-current={segment === undefined ? 'page' : undefined} href=".">
-        home
-      </a>
+    <li class="accent">
+      <a href="how-to-play">Comment jouer ?</a>
     </li>
     <li>
-      <a aria-current={segment === 'about' ? 'page' : undefined} href="about">
-        about
-      </a>
-    </li>
-    <li>
-      <a
-        rel="prefetch"
-        aria-current={segment === 'blog' ? 'page' : undefined}
-        href="blog">
-        blog
+      <a href="https://management30.com/" target="_blank">
+        Qu'est-ce que le management 3.0 ?
       </a>
     </li>
   </ul>
