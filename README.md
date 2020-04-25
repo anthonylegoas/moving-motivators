@@ -37,7 +37,7 @@ yarn run test
 
 - Twitter: [@anthony_legoas](https://twitter.com/anthony_legoas)
 - Github: [@anthonylegoas](https://github.com/anthonylegoas)
-- LinkedIn: [@anthony-le-goas-739314a9](https://linkedin.com/in/anthony-le-goas-739314a9)
+- LinkedIn: [@anthony-le-goas](https://linkedin.com/in/anthony-le-goas)
 
 ## 🤝 Contributing
 
