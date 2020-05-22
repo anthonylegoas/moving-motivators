@@ -18,10 +18,12 @@
   main {
     position: relative;
     width: 70%;
-    height: 100%;
+    min-height: 100%;
+    height: auto;
     background-color: var(--primary-color-light);
     padding: 2em;
     box-sizing: border-box;
+    overflow: auto;
   }
 </style>
 
