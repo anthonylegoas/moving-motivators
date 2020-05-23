@@ -45,7 +45,7 @@
       <a href="how-to-play">Comment jouer ?</a>
     </li>
     <li>
-      <a href="https://management30.com/" target="_blank">
+      <a href="https://management30.com/learn/" target="_blank">
         Qu'est-ce que le management 3.0 ?
       </a>
     </li>
