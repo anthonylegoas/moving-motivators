@@ -1,5 +1,6 @@
 <script>
   import MMCard from "./MMCard";
+  import MMMenu from "./MMMenu";
   import { DropZone } from "../../cdk";
   import { flip } from "svelte/animate";
 
@@ -11,6 +12,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    height: 100%;
   }
 </style>
 
@@ -23,3 +25,4 @@
     </div>
   {/each}
 </div>
+<MMMenu />
