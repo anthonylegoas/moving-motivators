@@ -10,7 +10,8 @@
   img.moving-motivator-card {
     width: 270px;
     height: 270px;
-    box-shadow: 2px 2px 15px #999;
+    box-shadow: var(--game-shadow);
+    border-radius: 4px;
     cursor: move;
   }
 </style>
