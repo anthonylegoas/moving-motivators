@@ -1,17 +1,21 @@
 <script>
-  import Nav from "../Nav/Nav.svelte";
+  import Nav from "./Nav";
+  import { menuStore } from "../../../stores";
 
   export let segment;
+
+  const { menuIsOpen } = menuStore;
 </script>
 
 <style>
   header {
-    height: 100%;
+    position: relative;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 0.5em 4em;
+    padding: 0.5em 2em;
   }
 
   .logo {
@@ -32,7 +36,7 @@
   }
 </style>
 
-<header>
+<header class:open={$menuIsOpen}>
   <a href=".">
     <img
       alt="Management 3.0 logo"

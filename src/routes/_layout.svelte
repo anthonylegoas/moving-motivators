@@ -1,5 +1,5 @@
 <script>
-  import Header from "../cdk/navigation/Header/Header.svelte";
+  import { Header } from "../common";
 
   export let segment;
 </script>
