@@ -1,7 +1,10 @@
 <script>
   import { Header } from "../common";
+  import { menuStore } from "../stores";
 
   export let segment;
+
+  const { menuIsOpen } = menuStore;
 </script>
 
 <style>
@@ -12,22 +15,33 @@
   }
 
   .main-layout :global(header) {
-    width: 30%;
+    left: 0;
+    width: 0%;
+    transition: width ease-in 0.3s;
   }
 
-  main {
+  .main-layout.menuOpen :global(header) {
+    width: 35%;
+  }
+
+  .main-layout main {
     position: relative;
-    width: 70%;
-    min-height: 100%;
-    height: auto;
+    right: 0;
+    width: 100%;
+    height: 100%;
     background-color: var(--primary-color-light);
-    padding: 2em;
     box-sizing: border-box;
-    overflow: auto;
+    overflow-y: auto;
+    transition: width ease-in 0.3s;
+    box-shadow: inset var(--game-shadow);
+  }
+
+  .main-layout.menuOpen main {
+    width: 65%;
   }
 </style>
 
-<div class="main-layout">
+<div class="main-layout" class:menuOpen={$menuIsOpen}>
   <Header {segment} />
   <main>
     <slot />
