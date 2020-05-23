@@ -4,6 +4,7 @@
   --secondary-color: rgb(170, 224, 249);
   --secondary-color-light: rgba(170, 224, 249, 0.2);
   --grey: rgb(166, 168, 171);
+  --game-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 body {
