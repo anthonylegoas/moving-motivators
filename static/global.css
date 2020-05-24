@@ -7,6 +7,11 @@
   --game-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
+@font-face {
+  font-family: "KapraNeue-Regular";
+  src: url("fonts/KapraNeue-Regular.otf");
+}
+
 body {
   margin: 0;
   font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen,
@@ -23,6 +28,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: "KapraNeue-Regular";
   margin: 0 0 0.5em 0;
   font-weight: 400;
   line-height: 1.2;
