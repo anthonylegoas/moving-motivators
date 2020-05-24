@@ -1,5 +1,6 @@
 <script>
   import { Page } from "../../cdk";
+  import { MMHowToPlay } from "../../common";
 </script>
 
 <svelte:head>
@@ -7,5 +8,5 @@
 </svelte:head>
 
 <Page>
-  <h1>Comment jouer ?</h1>
+  <MMHowToPlay />
 </Page>
