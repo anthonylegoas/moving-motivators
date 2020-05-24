@@ -2,7 +2,10 @@
   --primary-color: rgb(73, 48, 130);
   --primary-color-light: rgba(73, 48, 130, 0.1);
   --secondary-color: rgb(170, 224, 249);
+  --secondary-color-accent: rgb(114, 205, 247);
   --secondary-color-light: rgba(170, 224, 249, 0.2);
+  --tertiary-color: rgb(241, 124, 168);
+  --tertiary-color-light: rgba(241, 124, 168, 0.2);
   --grey: rgb(166, 168, 171);
   --game-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
@@ -35,11 +38,21 @@ h6 {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 a {
   color: inherit;
+}
+
+p > a {
+  border-bottom: 3px solid var(--secondary-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+p > a:hover {
+  border-bottom: 3px solid var(--secondary-color-accent);
 }
 
 #sapper {
