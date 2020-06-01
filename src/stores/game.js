@@ -6,6 +6,11 @@ function swap(array, from, to) {
   return array;
 }
 
+function move(array, from, to) {
+  array.splice(to, 0, array.splice(from, 1)[0]);
+  return array;
+}
+
 function createGameStore() {
   const { subscribe, update } = writable(useMMCards());
 
@@ -13,6 +18,7 @@ function createGameStore() {
     cards: {
       subscribe,
     },
+    moveCard: (from, to) => update((cards) => move(cards, from, to)),
     swapCards: (from, to) => update((cards) => swap(cards, from, to)),
   };
 }
