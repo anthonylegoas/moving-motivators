@@ -1,20 +1,15 @@
 <script>
   import MMGame from "./MMGame.svelte";
-  import { useMMCards } from "../../api";
+  import { gameStore } from "../../stores";
 
-  let cards = useMMCards();
+  const { cards, swapCards } = gameStore;
 
-  function swap(array, from, to) {
-    [array[from], array[to]] = [array[to], array[from]];
-    return array;
-  }
-
-  function handleDragDrop(e) {
+  function handleDrop(e) {
     const droppedCardId = e.dataTransfer.getData("text");
     const newDropZoneIndex = e.currentTarget.id.split("_")[1];
-    const oldDropZoneIndex = cards.findIndex(card => card.id == droppedCardId);
-    cards = swap(cards, oldDropZoneIndex, newDropZoneIndex);
+    const oldDropZoneIndex = $cards.findIndex(card => card.id == droppedCardId);
+    swapCards(oldDropZoneIndex, newDropZoneIndex);
   }
 </script>
 
-<MMGame {cards} on:drop={handleDragDrop} />
+<MMGame cards={$cards} on:drop={handleDrop} />
