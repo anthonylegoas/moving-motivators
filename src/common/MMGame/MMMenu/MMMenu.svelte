@@ -1,6 +1,7 @@
 <script>
   import { MenuButton } from "../../navigation";
   import MMMenuEntry from "./MMMenuEntry";
+  import ToggleCardSwap from "./ToggleCardSwap";
 </script>
 
 <style>
@@ -19,4 +20,5 @@
   <MMMenuEntry>
     <MenuButton />
   </MMMenuEntry>
+  <ToggleCardSwap />
 </div>
