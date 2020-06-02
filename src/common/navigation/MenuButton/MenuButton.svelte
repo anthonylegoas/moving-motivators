@@ -7,5 +7,5 @@
 
 <IconButton
   class={$$props.class}
-  name={$menuIsOpen ? 'arrow-left' : 'arrow-right'}
+  name={$menuIsOpen ? 'maximize' : 'menu'}
   on:click={() => toggleMenu()} />
