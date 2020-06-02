@@ -4,8 +4,8 @@
   <a href="https://github.com/anthonylegoas/moving-motivators/blob/master/LICENCE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
-  <a href="https://twitter.com/anthony\_legoas" target="_blank">
-    <img alt="Twitter: anthony\_legoas" src="https://img.shields.io/twitter/follow/anthony_legoas.svg?style=social" />
+  <a href="https://twitter.com/anthony_legoas" target="_blank">
+    <img alt="Twitter: anthony_legoas" src="https://img.shields.io/twitter/follow/anthony_legoas.svg?style=social" />
   </a>
 </p>
 
