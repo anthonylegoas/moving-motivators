@@ -12,14 +12,21 @@ function move(array, from, to) {
 }
 
 function createGameStore() {
-  const { subscribe, update } = writable(useMMCards());
+  const { subscribe: subscribeCards, update: updateCards } = writable(
+    useMMCards()
+  );
+  const { subscribe: subscribeSwip, update: updateSwap } = writable(false);
 
   return {
     cards: {
-      subscribe,
+      subscribe: subscribeCards,
     },
-    moveCard: (from, to) => update((cards) => move(cards, from, to)),
-    swapCards: (from, to) => update((cards) => swap(cards, from, to)),
+    swapIsActive: {
+      subscribe: subscribeSwip,
+    },
+    moveCard: (from, to) => updateCards((cards) => move(cards, from, to)),
+    swapCards: (from, to) => updateCards((cards) => swap(cards, from, to)),
+    toggleSwap: () => updateSwap((value) => !value),
   };
 }
 
