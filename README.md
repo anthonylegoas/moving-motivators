@@ -7,6 +7,9 @@
   <a href=".github/workflows/ci.yml">
     <img alt="CI status" src="https://github.com/anthonylegoas/moving-motivators/workflows/CI/badge.svg" />
   </a>
+  <a href=".github/workflows/cd.yml">
+    <img alt="CD status" src="https://github.com/anthonylegoas/moving-motivators/workflows/CD/badge.svg" />
+  </a>
   <a href="https://twitter.com/anthony_legoas" target="_blank">
     <img alt="Twitter: anthony_legoas" src="https://img.shields.io/twitter/follow/anthony_legoas.svg?style=social" />
   </a>
