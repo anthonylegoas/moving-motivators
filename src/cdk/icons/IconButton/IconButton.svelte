@@ -1,6 +1,7 @@
 <script>
   import Icon from "../Icon";
 
+  export let ariaLabel;
   export let name;
   export let size = 20;
 </script>
@@ -15,6 +16,6 @@
   }
 </style>
 
-<button class="icon-button {$$props.class}" on:click>
+<button aria-label={ariaLabel} class="icon-button {$$props.class}" on:click>
   <Icon {name} {size} />
 </button>
