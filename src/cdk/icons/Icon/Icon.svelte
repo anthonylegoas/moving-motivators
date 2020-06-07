@@ -24,7 +24,7 @@
   }
 </style>
 
-<svg class="icon" width={size} height={size}>
+<svg aria-hidden="true" class="icon" width={size} height={size}>
   <Icons />
   <use xlink:href="#{name}" />
 </svg>
