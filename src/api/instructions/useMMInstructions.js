@@ -5,7 +5,7 @@ const useMMInstructions = () => {
   const steps = [
     {
       title: `Définissez les motivateurs qui sont importants pour vous.`,
-      text: `Placez les cartes dans selon leur ordre d'importance de gauche (moins important) à droite (plus important).`,
+      text: `Placez les cartes selon leur ordre d'importance de gauche (moins important) à droite (plus important).`,
     },
     {
       title: `Discutez de la façon dont le changement affecte vos motivateurs.`,
