@@ -12,6 +12,7 @@
 
 @font-face {
   font-family: "KapraNeue-Regular";
+  font-display: swap;
   src: url("fonts/KapraNeue-Regular.otf");
 }
 
