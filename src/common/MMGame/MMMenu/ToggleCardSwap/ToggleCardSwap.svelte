@@ -6,5 +6,5 @@
 </script>
 
 <MMMenuEntry active={swapIsActive}>
-  <IconButton name="swap" on:click />
+  <IconButton ariaLabel="Toggle cards swapping" name="swap" on:click />
 </MMMenuEntry>
