@@ -6,6 +6,7 @@
 </script>
 
 <IconButton
+  ariaLabel={$menuIsOpen ? 'Cacher le menu' : 'Ouvrir le menu'}
   class={$$props.class}
   name={$menuIsOpen ? 'maximize' : 'menu'}
   on:click={() => toggleMenu()} />
