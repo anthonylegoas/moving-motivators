@@ -17,7 +17,7 @@
   .main-layout :global(header) {
     left: 0;
     width: 0%;
-    transition: width ease-in 0.3s;
+    transition: width ease 0.3s;
   }
 
   .main-layout.menuOpen :global(header) {
@@ -32,7 +32,7 @@
     background-color: var(--primary-color-light);
     box-sizing: border-box;
     overflow-y: auto;
-    transition: width ease-in 0.3s;
+    transition: width ease 0.3s;
     box-shadow: inset var(--game-shadow);
   }
 
