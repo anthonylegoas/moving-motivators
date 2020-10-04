@@ -10,18 +10,18 @@
 <style>
   .main-layout {
     display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
   }
 
   .main-layout :global(header) {
-    left: 0;
-    width: 0%;
-    transition: width ease 0.3s;
+    height: 0;
+    transition: height ease 0.3s;
   }
 
   .main-layout.menuOpen :global(header) {
-    width: 35%;
+    height: 10rem;
   }
 
   .main-layout main {
@@ -34,10 +34,6 @@
     overflow-y: auto;
     transition: width ease 0.3s;
     box-shadow: inset var(--game-shadow);
-  }
-
-  .main-layout.menuOpen main {
-    width: 65%;
   }
 </style>
 
