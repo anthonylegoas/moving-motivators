@@ -13,6 +13,7 @@
     justify-content: center;
     flex-wrap: wrap;
     height: 100%;
+    padding: 0 2rem;
   }
 </style>
 
