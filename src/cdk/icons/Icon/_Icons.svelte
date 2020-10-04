@@ -3,7 +3,7 @@
   <!-- icons from https://teenyicons.com/ -->
   <svg>
     <symbol
-      viewBox="0 0 30 30"
+      viewBox="-1 -1 35 35"
       fill="none"
       id="maximize"
       class="icon"
@@ -16,7 +16,7 @@
     </symbol>
 
     <symbol
-      viewBox="0 0 30 30"
+      viewBox="-1 -1 35 35"
       fill="none"
       id="minimize"
       class="icon"
