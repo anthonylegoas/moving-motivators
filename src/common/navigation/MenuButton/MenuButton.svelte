@@ -8,5 +8,5 @@
 <IconButton
   ariaLabel={$menuIsOpen ? 'Cacher le menu' : 'Ouvrir le menu'}
   class={$$props.class}
-  name={$menuIsOpen ? 'maximize' : 'menu'}
+  name={$menuIsOpen ? 'maximize' : 'minimize'}
   on:click={() => toggleMenu()} />
