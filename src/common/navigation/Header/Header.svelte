@@ -1,7 +1,7 @@
 <script>
   import Nav from "./Nav";
   import { menuStore } from "../../../stores";
-  import { fly } from "svelte/transition";
+  import { fade, fly } from "svelte/transition";
 
   export let segment;
 
@@ -11,35 +11,48 @@
 <style>
   header {
     position: relative;
-    width: 100%;
+    width: calc(100% - 4em);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
   }
 
+  .title {
+    display: flex;
+    align-items: center;
+  }
+
   .header-content {
+    width: 100%;
     padding: 0.5em 2em;
   }
 
+  .first-line {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .logo {
-    width: 60px;
+    width: 40px;
     height: auto;
-    margin: 1em 0;
+    margin: 1em 1em 1em 0;
   }
 
   p.app-name {
     font-family: "KapraNeue-Regular";
-    font-size: 6rem;
+    font-size: 3rem;
     color: var(--primary-color);
-    margin: 0 0 0.5em 0;
     font-weight: 400;
     line-height: 1.2;
   }
 
   p {
     color: var(--grey);
-    margin: 1em 0;
+    font-size: 0.875rem;
+    margin: 0.25em 0;
   }
 </style>
 
@@ -47,15 +60,20 @@
   {#if $menuIsOpen}
     <div
       class="header-content"
-      in:fly={{ delay: 400, duration: 250, x: -100, y: 0 }}
-      out:fly={{ delay: 0, duration: 100, x: -100, y: 0 }}>
-      <a href=".">
-        <img
-          alt="Management 3.0 logo"
-          class="logo"
-          src="images/logo/m30-logo.png" />
-      </a>
-      <p class="app-name">Moving Motivators</p>
+      in:fade={{ delay: 200, duration: 250 }}
+      out:fly={{ delay: 0, duration: 100, x: 0, y: -100 }}>
+      <div class="first-line">
+        <div class="title">
+          <a href=".">
+            <img
+              alt="Management 3.0 logo"
+              class="logo"
+              src="images/logo/m30-logo.png" />
+          </a>
+          <p class="app-name">Moving Motivators</p>
+        </div>
+        <Nav {segment} />
+      </div>
       <p>
         Issu du
         <a
@@ -68,8 +86,6 @@
         et comment les changements dans l'organisation de l'entreprise peuvent
         les affecter.
       </p>
-
-      <Nav {segment} />
     </div>
   {/if}
 </header>
