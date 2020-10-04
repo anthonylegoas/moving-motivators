@@ -1,7 +1,7 @@
 <style>
   .drop_zone {
-    width: 270px;
-    height: 270px;
+    width: auto;
+    height: auto;
     margin: 10px;
   }
 </style>
