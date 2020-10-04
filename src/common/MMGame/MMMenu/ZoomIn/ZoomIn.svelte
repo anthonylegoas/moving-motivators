@@ -6,5 +6,5 @@
 </script>
 
 <MMMenuEntry {disabled}>
-  <IconButton ariaLabel="Zoomer" name="plus" on:click />
+  <IconButton ariaLabel="Zoomer" name="zoom-in" on:click />
 </MMMenuEntry>
