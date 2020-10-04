@@ -1,5 +1,5 @@
 <script>
-  import { blur } from "svelte/transition";
+  import { fade } from "svelte/transition";
 </script>
 
 <style>
@@ -10,7 +10,7 @@
 
 <div
   class="page"
-  in:blur={{ delay: 200, duration: 300 }}
-  out:blur={{ delay: 0, duration: 200 }}>
+  in:fade={{ delay: 100, duration: 200 }}
+  out:fade={{ delay: 0, duration: 100 }}>
   <slot />
 </div>
