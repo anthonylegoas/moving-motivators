@@ -3,10 +3,6 @@
 </script>
 
 <style>
-  nav {
-    width: 100%;
-  }
-
   ul {
     display: flex;
     list-style: none;
@@ -25,7 +21,7 @@
     border-radius: 3px;
     color: var(--primary-color);
     text-decoration: none;
-    padding: 1em 1.25em;
+    padding: 0.75em 1em;
     transition: all ease 0.3s;
   }
 
