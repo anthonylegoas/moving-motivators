@@ -6,5 +6,5 @@
 </script>
 
 <MMMenuEntry {disabled}>
-  <IconButton ariaLabel="Dézoomer" name="minus" on:click />
+  <IconButton ariaLabel="Dézoomer" name="zoom-out" on:click />
 </MMMenuEntry>
