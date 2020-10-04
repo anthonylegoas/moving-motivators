@@ -1,5 +1,6 @@
 <div style="display: none">
   <!-- wrapper div allows use of innerHTML -->
+  <!-- icons from https://teenyicons.com/ -->
   <svg>
     <symbol id="arrow-left" class="icon" viewBox="0 0 24 24">
       <line x1="19" y1="12" x2="5" y2="12" />
@@ -156,5 +157,29 @@
         C506.261,334.572,506.725,334.057,507.164,333.522z" />
     </symbol>
   </svg>
+
+  <symbol
+    viewBox="-1 -1 35 35"
+    fill="none"
+    id="zoom-in"
+    class="icon"
+    width="40"
+    height="40">
+    <path
+      d="M14.5 14.5l-4-4M6.5 4v5M4 6.5h5m-2.5 6a6 6 0 110-12 6 6 0 010 12z"
+      stroke="currentColor" />
+  </symbol>
+
+  <symbol
+    viewBox="-1 -1 35 35"
+    fill="none"
+    id="zoom-out"
+    class="icon"
+    width="40"
+    height="40">
+    <path
+      d="M14.5 14.5l-4-4M4 6.5h5m-2.5 6a6 6 0 110-12 6 6 0 010 12z"
+      stroke="currentColor" />
+  </symbol>
 
 </div>
