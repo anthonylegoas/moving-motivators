@@ -1,5 +1,6 @@
 <script>
-  export let active = false;
+  export let active = false,
+    disabled = false;
 </script>
 
 <style>
@@ -18,8 +19,14 @@
   .mm-menu-entry.active {
     border: 1px solid var(--primary-color);
   }
+
+  .mm-menu-entry.disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
 </style>
 
-<div class="mm-menu-entry" class:active>
+<div class="mm-menu-entry" class:active class:disabled>
   <slot />
 </div>
