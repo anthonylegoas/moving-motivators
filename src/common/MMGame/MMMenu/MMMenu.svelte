@@ -3,6 +3,8 @@
   import { menuStore } from "../../../stores";
   import MMMenuEntry from "./MMMenuEntry";
   import ToggleCardSwap from "./ToggleCardSwap";
+  import ZoomIn from "./ZoomIn";
+  import ZoomOut from "./ZoomOut";
 
   const { menuIsOpen } = menuStore;
 </script>
@@ -29,4 +31,6 @@
     <MenuButton />
   </MMMenuEntry>
   <ToggleCardSwap />
+  <ZoomIn />
+  <ZoomOut />
 </div>
