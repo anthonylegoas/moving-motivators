@@ -51,10 +51,30 @@
         0 0 9 18.13V22" />
     </symbol>
 
-    <symbol id="maximize" class="icon" viewBox="0 0 24 24">
+    <symbol
+      viewBox="0 0 30 30"
+      fill="none"
+      id="maximize"
+      class="icon"
+      width="40"
+      height="40">
       <path
-        d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0
-        2-2v-3M3 16v3a2 2 0 0 0 2 2h3" />
+        d="M13.5 13.5H10m3.5 0V10m0 3.5l-4-4m.5-8h3.5m0 0V5m0-3.5l-4 4M5
+        1.5H1.5m0 0V5m0-3.5l4 4m-4 4.5v3.5m0 0H5m-3.5 0l4-4"
+        stroke="currentColor" />
+    </symbol>
+
+    <symbol
+      viewBox="0 0 30 30"
+      fill="none"
+      id="minimize"
+      class="icon"
+      width="40"
+      height="40">
+      <path
+        d="M9.5 9.5H13m-3.5 0V13m0-3.5l4 4m-.5-8H9.5m0 0V2m0 3.5l4-4M2 5.5h3.5m0
+        0V2m0 3.5l-4-4m4 11.5V9.5m0 0H2m3.5 0l-4 4"
+        stroke="currentColor" />
     </symbol>
 
     <symbol id="maximize-2" class="icon" viewBox="0 0 24 24">
@@ -136,4 +156,5 @@
         C506.261,334.572,506.725,334.057,507.164,333.522z" />
     </symbol>
   </svg>
+
 </div>
