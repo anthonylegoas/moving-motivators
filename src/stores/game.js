@@ -16,6 +16,9 @@ function createGameStore() {
     useMMCards()
   );
   const { subscribe: subscribeSwip, update: updateSwap } = writable(false);
+  const { subscribe: subscribeZoom, update: updateZoom } = writable(0.5);
+  const zoomMin = 0.4;
+  const zoomMax = 0.8;
 
   return {
     cards: {
@@ -24,9 +27,18 @@ function createGameStore() {
     swapIsActive: {
       subscribe: subscribeSwip,
     },
+    zoom: {
+      subscribe: subscribeZoom,
+    },
     moveCard: (from, to) => updateCards((cards) => move(cards, from, to)),
     swapCards: (from, to) => updateCards((cards) => swap(cards, from, to)),
     toggleSwap: () => updateSwap((value) => !value),
+    zoomIn: () =>
+      updateZoom((zoom) => (zoom >= zoomMax ? zoomMax : (zoom += 0.1))),
+    zoomOut: () =>
+      updateZoom((zoom) => (zoom <= zoomMin ? zoomMin : (zoom -= 0.1))),
+    zoomMin,
+    zoomMax,
   };
 }
 
