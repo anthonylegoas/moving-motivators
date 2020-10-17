@@ -1,5 +1,5 @@
 <script>
-  import { Header } from "../common";
+  import { Header } from "../components";
   import { menuStore } from "../stores";
 
   export let segment;

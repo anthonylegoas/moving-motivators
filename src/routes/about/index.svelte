@@ -1,6 +1,6 @@
 <script>
   import { Page } from "../../cdk";
-  import { MMHowToPlay } from "../../common";
+  import { MMHowToPlay } from "../../components";
 </script>
 
 <style>
