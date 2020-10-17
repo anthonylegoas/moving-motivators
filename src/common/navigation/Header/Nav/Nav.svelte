@@ -17,18 +17,15 @@
   a {
     display: block;
     float: left;
-    border: 1px solid var(--primary-color);
-    border-radius: 3px;
-    color: var(--primary-color);
+    color: var(--grey);
     text-decoration: none;
-    padding: 0.75em 1em;
+    padding: 0.25em;
     transition: all ease 0.3s;
   }
 
   a:hover,
   a[aria-current] {
-    background-color: var(--primary-color);
-    color: white;
+    color: var(--primary-color);
   }
 </style>
 
@@ -36,14 +33,14 @@
   <ul>
     <li>
       <a aria-current={segment === undefined ? 'page' : undefined} href=".">
-        Jouer
+        LE JEU
       </a>
     </li>
     <li>
       <a
         aria-current={segment === 'how-to-play' ? 'page' : undefined}
         href="how-to-play">
-        Comment jouer ?
+        À PROPOS
       </a>
     </li>
   </ul>
