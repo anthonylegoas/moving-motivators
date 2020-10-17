@@ -20,7 +20,7 @@
   }
 
   ul > li + li {
-    margin-top: 4em;
+    margin-top: 0.5em;
   }
 
   li {
