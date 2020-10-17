@@ -38,8 +38,33 @@ h6 {
   line-height: 1.2;
 }
 
+h1,
+h2,
+h3 {
+  color: var(--primary-color);
+}
+
 h1 {
-  font-size: 2.5em;
+  font-size: 3rem;
+  margin: 0.5em 0;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 0.25em;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h2::after {
+  background-color: var(--tertiary-color);
+  content: "";
+  display: block;
+  height: 4px;
+  margin: 1rem auto 0;
+  width: 5rem;
 }
 
 a {
