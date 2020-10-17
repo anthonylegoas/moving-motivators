@@ -74,18 +74,6 @@
         </div>
         <Nav {segment} />
       </div>
-      <p>
-        Issu du
-        <a
-          href="https://management30.com/learn/"
-          rel="noopener"
-          target="_blank">
-          Management 3.0
-        </a>
-        , cet exercice permet aux personnes de réfléchir sur leurs motivations
-        et comment les changements dans l'organisation de l'entreprise peuvent
-        les affecter.
-      </p>
     </div>
   {/if}
 </header>
