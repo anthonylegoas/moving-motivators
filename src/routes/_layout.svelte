@@ -21,7 +21,7 @@
   }
 
   .main-layout.menuOpen :global(header) {
-    height: 10rem;
+    height: 6rem;
   }
 
   .main-layout main {
