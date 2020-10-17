@@ -1,6 +1,6 @@
 <script>
   import { Page } from "../../cdk";
-  import { MMHowToPlay } from "../../components";
+  import { GitHubLink, MMHowToPlay } from "../../components";
 </script>
 
 <style>
@@ -34,5 +34,6 @@
       affecter.
     </p>
     <MMHowToPlay />
+    <GitHubLink />
   </div>
 </Page>
