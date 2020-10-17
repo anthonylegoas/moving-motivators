@@ -1,15 +1,15 @@
-describe("Sapper template app", () => {
+describe("Navigation", () => {
   beforeEach(() => {
     cy.visit("/");
   });
 
   it("navigates to /", () => {
-    cy.get("nav a").contains("Jouer").click();
+    cy.get("nav a").contains("LE JEU").click();
     cy.url().should("include", "/");
   });
 
-  it("navigates to /blog", () => {
-    cy.get("nav a").contains("Comment jouer ?").click();
-    cy.url().should("include", "/how-to-play");
+  it("navigates to /about", () => {
+    cy.get("nav a").contains("À PROPOS").click();
+    cy.url().should("include", "/about");
   });
 });
