@@ -37,9 +37,7 @@
       </a>
     </li>
     <li>
-      <a
-        aria-current={segment === 'how-to-play' ? 'page' : undefined}
-        href="how-to-play">
+      <a aria-current={segment === 'about' ? 'page' : undefined} href="about">
         À PROPOS
       </a>
     </li>
