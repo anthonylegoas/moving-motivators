@@ -20,7 +20,7 @@
 
   .title {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
   }
 
   .header-content {
@@ -43,7 +43,7 @@
 
   p.app-name {
     font-family: "KapraNeue-Regular";
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: var(--primary-color);
     font-weight: 400;
     line-height: 1.2;
