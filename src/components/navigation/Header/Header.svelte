@@ -1,5 +1,6 @@
 <script>
   import Nav from "./Nav";
+  import { LanguageSelector } from "../../LanguageSelector";
   import { menuStore } from "../../../stores";
   import { fade, fly } from "svelte/transition";
 
@@ -54,6 +55,11 @@
     font-size: 0.875rem;
     margin: 0.25em 0;
   }
+
+  .end-of-line {
+    display: flex;
+    align-items: center;
+  }
 </style>
 
 <header>
@@ -72,7 +78,10 @@
           </a>
           <p class="app-name">Moving Motivators</p>
         </div>
-        <Nav {segment} />
+        <div class="end-of-line">
+          <Nav {segment} />
+          <LanguageSelector />
+        </div>
       </div>
     </div>
   {/if}
