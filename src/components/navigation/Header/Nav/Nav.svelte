@@ -1,4 +1,5 @@
 <script>
+  import { _ } from "svelte-i18n";
   export let segment;
 </script>
 
@@ -33,12 +34,12 @@
   <ul>
     <li>
       <a aria-current={segment === undefined ? 'page' : undefined} href=".">
-        LE JEU
+        {$_('nav.home')}
       </a>
     </li>
     <li>
       <a aria-current={segment === 'about' ? 'page' : undefined} href="about">
-        À PROPOS
+        {$_('nav.about')}
       </a>
     </li>
   </ul>
