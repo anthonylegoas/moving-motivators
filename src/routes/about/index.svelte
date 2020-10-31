@@ -1,4 +1,5 @@
 <script>
+  import { _ } from "svelte-i18n";
   import { Page } from "../../cdk";
   import { GitHubLink, MMHowToPlay } from "../../components";
 </script>
@@ -17,21 +18,19 @@
 </style>
 
 <svelte:head>
-  <title>Comment jouer ?</title>
+  <title>{$_('about.title')}</title>
 </svelte:head>
 
 <Page>
   <div class="about">
-    <h1>À propos</h1>
-    <h2>Qu'est-ce que c'est ?</h2>
+    <h1>{$_('about.title')}</h1>
+    <h2>{$_('about.sections.0.title')}</h2>
     <p>
-      Issu du
+      {$_('about.sections.0.texts.0')}
       <a href="https://management30.com/learn/" rel="noopener" target="_blank">
         Management 3.0
       </a>
-      , cet exercice permet aux personnes de réfléchir sur leurs motivations et
-      comment les changements dans l'organisation de l'entreprise peuvent les
-      affecter.
+      {$_('about.sections.0.texts.1')}
     </p>
     <MMHowToPlay />
     <GitHubLink />
