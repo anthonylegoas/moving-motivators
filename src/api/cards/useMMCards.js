@@ -5,52 +5,52 @@ const useMMCards = () => {
   const cards = [
     {
       id: 1,
-      img: "acceptance.webp",
+      img: "acceptance.png",
       name: "Acceptation",
     },
     {
       id: 2,
-      img: "curiosity.webp",
+      img: "curiosity.png",
       name: "Curiosité",
     },
     {
       id: 3,
-      img: "freedom.webp",
+      img: "freedom.png",
       name: "Liberté",
     },
     {
       id: 4,
-      img: "goal.webp",
+      img: "goal.png",
       name: "But",
     },
     {
       id: 5,
-      img: "honor.webp",
+      img: "honor.png",
       name: "Honneur",
     },
     {
       id: 6,
-      img: "mastery.webp",
+      img: "mastery.png",
       name: "Maîtrise",
     },
     {
       id: 7,
-      img: "order.webp",
+      img: "order.png",
       name: "Ordre",
     },
     {
       id: 8,
-      img: "power.webp",
+      img: "power.png",
       name: "Pouvoir",
     },
     {
       id: 9,
-      img: "relatedness.webp",
+      img: "relatedness.png",
       name: "Relations socials",
     },
     {
       id: 10,
-      img: "status.webp",
+      img: "status.png",
       name: "Statut",
     },
   ];
