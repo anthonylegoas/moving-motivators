@@ -1,9 +1,10 @@
 <script>
+  import { _ } from "svelte-i18n";
   import { IconLink } from "../../cdk";
 </script>
 
 <IconLink
   href="https://github.com/anthonylegoas/moving-motivators"
   name="github">
-  Voir sur GitHub
+  {$_('github-link')}
 </IconLink>
