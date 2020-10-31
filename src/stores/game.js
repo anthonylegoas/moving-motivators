@@ -30,6 +30,7 @@ function createGameStore() {
     zoom: {
       subscribe: subscribeZoom,
     },
+    refreshCards: () => updateCards((cards) => [...cards]),
     moveCard: (from, to) => updateCards((cards) => move(cards, from, to)),
     swapCards: (from, to) => updateCards((cards) => swap(cards, from, to)),
     toggleSwap: () => updateSwap((value) => !value),
