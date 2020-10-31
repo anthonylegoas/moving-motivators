@@ -13,7 +13,10 @@
   }
 </style>
 
-<select bind:value={selected} on:change={() => ($locale = selected)}>
+<select
+  aria-label="Language"
+  bind:value={selected}
+  on:change={() => ($locale = selected)}>
   {#each $locales as item}
     <option value={item}>{$_(`languages.${item}`)}</option>
   {/each}
