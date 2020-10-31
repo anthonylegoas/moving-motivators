@@ -26,6 +26,7 @@ module.exports = {
   globals: {
     globalThis: false,
   },
+  parser: "babel-eslint",
   parserOptions: {
     ecmaVersion: 9,
     sourceType: "module",
