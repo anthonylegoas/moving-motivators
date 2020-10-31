@@ -1,1 +1,1 @@
-export { default as MMHowToPlay } from "./MMHowToPlayContainer.svelte";
+export { default as MMHowToPlay } from "./MMHowToPlay.svelte";

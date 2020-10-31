@@ -1,5 +1,5 @@
 <script>
-  export let steps;
+  import { _ } from "svelte-i18n";
 </script>
 
 <style>
@@ -32,13 +32,19 @@
 </style>
 
 <div class="mm-how-to-play">
-  <h2>Comment jouer ?</h2>
+  <h2>{$_('about.sections.1.title')}</h2>
   <ul>
-    {#each steps as step}
-      <li>
-        <h3>{step.title}</h3>
-        <p>{step.text}</p>
-      </li>
-    {/each}
+    <li>
+      <h3>{$_('about.sections.1.steps.0.title')}</h3>
+      <p>{$_('about.sections.1.steps.0.text')}</p>
+    </li>
+    <li>
+      <h3>{$_('about.sections.1.steps.1.title')}</h3>
+      <p>{$_('about.sections.1.steps.1.text')}</p>
+    </li>
+    <li>
+      <h3>{$_('about.sections.1.steps.2.title')}</h3>
+      <p>{$_('about.sections.1.steps.2.text')}</p>
+    </li>
   </ul>
 </div>
