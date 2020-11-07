@@ -60,6 +60,12 @@
     display: flex;
     align-items: center;
   }
+
+  @media (max-width: 600px) {
+    .app-name {
+      display: none;
+    }
+  }
 </style>
 
 <header>
