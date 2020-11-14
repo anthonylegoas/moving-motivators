@@ -20,6 +20,19 @@
     background-color: #fff;
     transition: all 0.3s ease-in-out;
   }
+
+  @media (max-width: 600px) {
+    .mm-menu {
+      top: unset;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: space-around;
+      padding: 0.75em 0.5em;
+    }
+  }
 </style>
 
 <div class="mm-menu" class:with-app-menu={$menuIsOpen}>
