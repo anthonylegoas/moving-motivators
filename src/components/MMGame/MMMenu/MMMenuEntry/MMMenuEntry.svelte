@@ -5,6 +5,7 @@
 
 <style>
   .mm-menu-entry {
+    display: flex;
     margin: 0;
     user-select: none;
     transition: all ease 0.2s;
