@@ -11,12 +11,15 @@
 
 <style>
   header {
-    position: relative;
-    width: calc(100% - 4em);
+    z-index: 1;
+    position: fixed;
+    width: calc(100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    background: white;
+    box-shadow: var(--game-shadow);
   }
 
   .title {
@@ -30,7 +33,7 @@
   }
 
   .first-line {
-    width: 100%;
+    width: calc(100% - 4em);
     display: flex;
     justify-content: space-between;
     align-items: center;
