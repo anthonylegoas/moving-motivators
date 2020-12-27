@@ -25,6 +25,7 @@
   }
 
   .main-layout main {
+    padding: 5em 0;
     position: relative;
     right: 0;
     width: 100%;
