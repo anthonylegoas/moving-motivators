@@ -3,6 +3,16 @@
   let selected = $locale;
 </script>
 
+<!-- svelte-ignore a11y-no-onchange -->
+<select
+  aria-label="Language"
+  bind:value={selected}
+  on:change={() => ($locale = selected)}>
+  {#each $locales as item}
+    <option value={item}>{$_(`languages.${item}`)}</option>
+  {/each}
+</select>
+
 <style>
   select {
     margin-left: 1rem;
@@ -12,12 +22,3 @@
     color: var(--primary-color);
   }
 </style>
-
-<select
-  aria-label="Language"
-  bind:value={selected}
-  on:blur={() => ($locale = selected)}>
-  {#each $locales as item}
-    <option value={item}>{$_(`languages.${item}`)}</option>
-  {/each}
-</select>
