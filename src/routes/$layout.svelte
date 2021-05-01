@@ -1,11 +1,22 @@
 <script>
+  import { onMount } from "svelte";
   import { Header } from "../components";
   import { menuStore } from "../stores";
+  import { startClient } from "../i18n";
 
   export let segment;
 
   const { menuIsOpen } = menuStore;
+
+  onMount(() => startClient());
 </script>
+
+<div class="main-layout" class:menuOpen={$menuIsOpen}>
+  <Header {segment} />
+  <main>
+    <slot />
+  </main>
+</div>
 
 <style>
   .main-layout {
@@ -37,10 +48,3 @@
     box-shadow: inset var(--game-shadow);
   }
 </style>
-
-<div class="main-layout" class:menuOpen={$menuIsOpen}>
-  <Header {segment} />
-  <main>
-    <slot />
-  </main>
-</div>
