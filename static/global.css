@@ -81,10 +81,6 @@ p > a:hover {
   border-bottom: 3px solid var(--secondary-color-accent);
 }
 
-#sapper {
-  height: 100%;
-}
-
 @media (min-width: 400px) {
   body {
     font-size: 16px;
