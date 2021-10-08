@@ -4,6 +4,7 @@
     "about": "À PROPOS"
   },
   "game": {
+    "title-placeholder": "CLIQUER POUR AJOUTER VOTRE TITRE DE SESSION",
     "cards": [
       {
         "id": 1,
