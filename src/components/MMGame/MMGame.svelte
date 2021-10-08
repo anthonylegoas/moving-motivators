@@ -3,6 +3,7 @@
   import MMMenu from "./MMMenu";
   import { DropZone } from "../../cdk";
   import { flip } from "svelte/animate";
+  import { _ } from "svelte-i18n";
 
   export let cards;
 </script>
@@ -44,7 +45,7 @@
   }
 </style>
 
-<input class="MMSessionTitle" placeholder="CLICK TO ADD YOUR SESSION TITLE"/>
+<input class="MMSessionTitle" placeholder={$_('game.title-placeholder')}/>
 <div class="MMGame">
   {#each cards as { id, img, name }, i (id)}
     <div animate:flip={{ duration: 500 }}>
