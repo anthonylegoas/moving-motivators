@@ -5,6 +5,8 @@
 <style>
   .page {
     padding: 2em;
+    display: flex;
+    flex-direction: column;
   }
 </style>
 
