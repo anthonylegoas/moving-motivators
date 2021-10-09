@@ -1,5 +1,5 @@
 <script>
-  import { _, locale, locales } from "svelte-i18n";
+  import { t as _, locale, locales } from "svelte-intl-precompile";
   let selected = $locale;
 </script>
 
@@ -7,7 +7,8 @@
 <select
   aria-label="Language"
   bind:value={selected}
-  on:change={() => ($locale = selected)}>
+  on:change={() => ($locale = selected)}
+>
   {#each $locales as item}
     <option value={item}>{$_(`languages.${item}`)}</option>
   {/each}

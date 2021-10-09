@@ -1,23 +1,25 @@
 <script>
-  import { startClient } from "../i18n";
-  import { Header } from "../components";
-  import { menuStore } from "../stores";
-  import { onMount } from "svelte";
-  import { dictionary, locale, _, init } from "svelte-i18n";
-
-  init({
-    fallbackLocale: "en",
-    initialLocale: "en",
-  });
+  import { Header } from "../lib/components";
+  import { menuStore } from "../lib/stores";
+  import {
+    addMessages,
+    init,
+    // getLocaleFromNavigator,
+  } from "svelte-intl-precompile";
+  import fr from "../locales/fr.js";
+  import en from "../locales/en.js";
+  // import { session } from "$app/stores";
 
   export let segment;
 
   const { menuIsOpen } = menuStore;
 
-  onMount(() => {
-    // i18nMiddleware();
-    alert("vovou");
-    // startClient();
+  addMessages("en", en);
+  addMessages("fr", fr);
+
+  init({
+    fallbackLocale: "en",
+    initialLocale: "en",
   });
 </script>
 
