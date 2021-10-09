@@ -1,8 +1,28 @@
 <script>
-  import { _ } from "svelte-i18n";
+  import { t as _ } from "svelte-intl-precompile";
   import { Page } from "../../cdk";
   import { GitHubLink, MMHowToPlay } from "../../components";
 </script>
+
+<svelte:head>
+  <title>{$_("about.title")}</title>
+</svelte:head>
+
+<Page>
+  <div class="about">
+    <h1>{$_("about.title")}</h1>
+    <h2>{$_("about.sections.0.title")}</h2>
+    <p>
+      {$_("about.sections.0.texts.0")}
+      <a href="https://management30.com/learn/" rel="noopener" target="_blank">
+        Management 3.0
+      </a>
+      {$_("about.sections.0.texts.1")}
+    </p>
+    <MMHowToPlay />
+    <GitHubLink />
+  </div>
+</Page>
 
 <style>
   .about {
@@ -16,23 +36,3 @@
     text-align: center;
   }
 </style>
-
-<svelte:head>
-  <title>{$_('about.title')}</title>
-</svelte:head>
-
-<Page>
-  <div class="about">
-    <h1>{$_('about.title')}</h1>
-    <h2>{$_('about.sections.0.title')}</h2>
-    <p>
-      {$_('about.sections.0.texts.0')}
-      <a href="https://management30.com/learn/" rel="noopener" target="_blank">
-        Management 3.0
-      </a>
-      {$_('about.sections.0.texts.1')}
-    </p>
-    <MMHowToPlay />
-    <GitHubLink />
-  </div>
-</Page>

@@ -1,7 +1,22 @@
 <script>
-  import { _ } from "svelte-i18n";
+  import { t as _ } from "svelte-intl-precompile";
   export let segment;
 </script>
+
+<nav>
+  <ul>
+    <li>
+      <a aria-current={segment === undefined ? "page" : undefined} href=".">
+        {$_("nav.home")}
+      </a>
+    </li>
+    <li>
+      <a aria-current={segment === "about" ? "page" : undefined} href="about">
+        {$_("nav.about")}
+      </a>
+    </li>
+  </ul>
+</nav>
 
 <style>
   ul {
@@ -29,18 +44,3 @@
     color: var(--primary-color);
   }
 </style>
-
-<nav>
-  <ul>
-    <li>
-      <a aria-current={segment === undefined ? 'page' : undefined} href=".">
-        {$_('nav.home')}
-      </a>
-    </li>
-    <li>
-      <a aria-current={segment === 'about' ? 'page' : undefined} href="about">
-        {$_('nav.about')}
-      </a>
-    </li>
-  </ul>
-</nav>
