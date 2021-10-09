@@ -1,11 +1,32 @@
 <script>
+  import { startClient } from "../i18n";
   import { Header } from "../components";
   import { menuStore } from "../stores";
+  import { onMount } from "svelte";
+  import { dictionary, locale, _, init } from "svelte-i18n";
+
+  init({
+    fallbackLocale: "en",
+    initialLocale: "en",
+  });
 
   export let segment;
 
   const { menuIsOpen } = menuStore;
+
+  onMount(() => {
+    // i18nMiddleware();
+    alert("vovou");
+    // startClient();
+  });
 </script>
+
+<div class="main-layout" class:menuOpen={$menuIsOpen}>
+  <Header {segment} />
+  <main>
+    <slot />
+  </main>
+</div>
 
 <style>
   .main-layout {
@@ -37,10 +58,3 @@
     box-shadow: inset var(--game-shadow);
   }
 </style>
-
-<div class="main-layout" class:menuOpen={$menuIsOpen}>
-  <Header {segment} />
-  <main>
-    <slot />
-  </main>
-</div>

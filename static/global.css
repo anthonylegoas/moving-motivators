@@ -81,7 +81,7 @@ p > a:hover {
   border-bottom: 3px solid var(--secondary-color-accent);
 }
 
-#sapper {
+#svelte {
   height: 100%;
 }
 
