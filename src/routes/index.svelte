@@ -1,6 +1,6 @@
 <script>
-  import { Page } from "../cdk";
-  import { MMGame } from "../components";
+  import { Page } from "../lib/cdk";
+  import { MMGame } from "../lib/components";
 </script>
 
 <svelte:head>
