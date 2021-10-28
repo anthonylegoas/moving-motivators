@@ -45,14 +45,16 @@
   }
 </style>
 
-<input class="MMSessionTitle" placeholder={$_('game.title-placeholder')}/>
-<div class="MMGame">
-  {#each cards as { id, img, name }, i (id)}
-    <div animate:flip={{ duration: 500 }}>
-      <DropZone on:drop id={`dropZone_${i}`}>
-        <MMCard {id} {img} {name} />
-      </DropZone>
-    </div>
-  {/each}
+<div id="MMGameContainer">
+  <input class="MMSessionTitle" placeholder={$_('game.title-placeholder')} />
+  <div class="MMGame">
+    {#each cards as { id, img, name }, i (id)}
+      <div animate:flip={{ duration: 500 }}>
+        <DropZone on:drop id={`dropZone_${i}`}>
+          <MMCard {id} {img} {name} />
+        </DropZone>
+      </div>
+    {/each}
+  </div>
 </div>
 <MMMenu />
