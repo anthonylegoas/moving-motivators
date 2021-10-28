@@ -3,8 +3,8 @@
   import ExportPNG from './ExportPNG.svelte'
 
   export const exportPng = () => {
-    const elements = document.getElementsByClassName('MMGame')
-    html2canvas(elements[0]).then((canvas) => {
+    const element = document.getElementById('MMGameContainer')
+    html2canvas(element).then((canvas) => {
       const link = document.getElementById('hidden-download-link')
       const title = document.getElementsByClassName('MMSessionTitle')[0].value
 
