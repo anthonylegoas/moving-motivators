@@ -5,6 +5,7 @@
   import ToggleCardSwap from "./ToggleCardSwap";
   import ZoomIn from "./ZoomIn";
   import ZoomOut from "./ZoomOut";
+  import ExportPNG from "./ExportPNG";
 
   const { menuIsOpen } = menuStore;
 </script>
@@ -42,4 +43,5 @@
   <ToggleCardSwap />
   <ZoomIn />
   <ZoomOut />
+  <ExportPNG/>
 </div>
