@@ -1,25 +1,21 @@
 <script>
   import { Header } from "../lib/components";
   import { menuStore } from "../lib/stores";
-  import {
-    addMessages,
-    init,
-    // getLocaleFromNavigator,
-  } from "svelte-intl-precompile";
+  import { addMessages, init } from "svelte-intl-precompile";
   import fr from "../locales/fr.js";
   import en from "../locales/en.js";
-  // import { session } from "$app/stores";
+  import { session } from "$app/stores";
 
   export let segment;
 
   const { menuIsOpen } = menuStore;
 
   addMessages("en", en);
-  addMessages("fr", fr);
+  addMessages("fr-FR", fr);
 
   init({
     fallbackLocale: "en",
-    initialLocale: "en",
+    initialLocale: $session.acceptedLanguage,
   });
 </script>
 
