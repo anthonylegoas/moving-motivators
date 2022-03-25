@@ -1,4 +1,4 @@
-export function getSession(request) {
-    let acceptedLanguage = request.headers["accept-language"].split(',')[0];
+export function getSession(event) {
+    const acceptedLanguage = event.request.headers["accept-language"]?.split(',')[0];
     return { acceptedLanguage };
 }
