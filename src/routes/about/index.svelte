@@ -1,7 +1,7 @@
 <script>
   import { t as _ } from "svelte-intl-precompile";
-  import { Page } from "../../cdk";
-  import { GitHubLink, MMHowToPlay } from "../../components";
+  import { Page } from "../../lib/cdk";
+  import { GitHubLink, MMHowToPlay } from "../../lib/components";
 </script>
 
 <svelte:head>
