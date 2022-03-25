@@ -89,7 +89,7 @@ export default {
     },
     "github-link": "Show on GitHub",
     "languages": {
-        "fr": "Français",
+        "fr-FR": "Français",
         "en": "English"
     }
 }
