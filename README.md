@@ -55,7 +55,7 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-Copyright © 2021 [Anthony Le Goas](https://github.com/anthonylegoas).<br />
+Copyright © 2022 [Anthony Le Goas](https://github.com/anthonylegoas).<br />
 This project is [MIT](https://github.com/anthonylegoas/moving-motivators/blob/master/LICENCE) licensed.
 
 ---
