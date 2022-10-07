@@ -3,7 +3,7 @@
   import MMMenu from "./MMMenu";
   import { DropZone } from "../../cdk";
   import { flip } from "svelte/animate";
-  import { _ } from "svelte-i18n";
+  import { t as _} from "svelte-intl-precompile";
 
   export let cards;
 </script>
