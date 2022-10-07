@@ -3319,6 +3319,11 @@ precompile-intl-runtime@^0.4.7:
   resolved "https://registry.yarnpkg.com/precompile-intl-runtime/-/precompile-intl-runtime-0.4.8.tgz#19094f75aaa3ab10b4b6a9f1c2812f020ca803bd"
   integrity sha512-qA3YMkbcZUzdSLquQo+C832JJTaDmV+aquMKhGB9kNHfWvothgKyCSLlxP/zGVnb5RtVbbiZGobOI3csQt/Y1g==
 
+precompile-intl-runtime@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/precompile-intl-runtime/-/precompile-intl-runtime-0.8.0.tgz#a464cc993adb89142c78e8795c7f829f41b0bd3d"
+  integrity sha512-66HX8qUOZFiDLgpMpFodM16573FsZr3AOwrtWuIeqpsNypIQxcNYLcYO47Z4DFXWfl25dGjZmfEtFig+6xIkEQ==
+
 prelude-ls@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
