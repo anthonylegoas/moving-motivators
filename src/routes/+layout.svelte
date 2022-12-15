@@ -4,7 +4,7 @@
   import { addMessages, init } from "svelte-intl-precompile";
   import fr from "../locales/fr.js";
   import en from "../locales/en.js";
-  import { session } from "$app/stores";
+  // import { session } from "$app/stores";
 
   export let segment;
 
@@ -13,9 +13,11 @@
   addMessages("en", en);
   addMessages("fr-FR", fr);
 
+  // get accept-language request header
+
   init({
     fallbackLocale: "en",
-    initialLocale: $session.acceptedLanguage,
+    initialLocale: "en", // set language get from request header
   });
 </script>
 
