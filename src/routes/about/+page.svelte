@@ -14,7 +14,7 @@
     <h2>{$_("about.sections.0.title")}</h2>
     <p>
       {$_("about.sections.0.texts.0")}
-      <a href="https://management30.com/learn/" rel="noopener" target="_blank">
+      <a href="https://management30.com/learn/" rel="noreferrer" target="_blank">
         Management 3.0
       </a>
       {$_("about.sections.0.texts.1")}
