@@ -1,35 +1,35 @@
 function getCookie(name, cookies) {
-  if (cookies == null) {
-    if (typeof window === "undefined") {
-      return undefined;
+    if (cookies == null) {
+        if (typeof window === "undefined") {
+            return undefined;
+        }
+        cookies = document.cookie;
     }
-    cookies = document.cookie;
-  }
 
-  const kv = cookies.split(";").find((part) => part.trim().startsWith(name));
+    const kv = cookies.split(";").find((part) => part.trim().startsWith(name));
 
-  if (!kv) return undefined;
+    if (!kv) return undefined;
 
-  const cookieValue = kv.split("=")[1];
-  if (!cookieValue) return undefined;
+    const cookieValue = kv.split("=")[1];
+    if (!cookieValue) return undefined;
 
-  return decodeURIComponent(cookieValue.trim());
+    return decodeURIComponent(cookieValue.trim());
 }
 
 function setCookie(name, value, options = {}) {
-  if (options.expires instanceof Date) {
-    options.expires = options.expires.toUTCString();
-  }
+    if (options.expires instanceof Date) {
+        options.expires = options.expires.toUTCString();
+    }
 
-  const updatedCookie = {
-    [encodeURIComponent(name)]: encodeURIComponent(value),
-    sameSite: "strict",
-    ...options,
-  };
+    const updatedCookie = {
+        [encodeURIComponent(name)]: encodeURIComponent(value),
+        sameSite: "strict",
+        ...options,
+    };
 
-  document.cookie = Object.entries(updatedCookie)
-    .map((kv) => kv.join("="))
-    .join(";");
+    document.cookie = Object.entries(updatedCookie)
+        .map((kv) => kv.join("="))
+        .join(";");
 }
 
 export { getCookie, setCookie };
