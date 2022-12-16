@@ -1,7 +1,7 @@
 module.exports = {
   root: true,
   rules: {
-    indent: ["tab", 1],
+    indent: 1,
     "no-unused-vars": 2,
     semi: [2, "always"],
     "keyword-spacing": [2, { before: true, after: true }],
