@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 1.2.0 - 2023-02-17
+
+### Added
+
+- ✨ Add the possibility to set a session title.
+- ✨ Add the "export to PNG" feature.
+- 📝 Add contribution guide.
+
+### Changed
+
+- 🏗️ Migrate from Sapper to SvelteKit 1.0.
+
 ## 1.1.3 - 2021-01-17
 
 ### Fixed
